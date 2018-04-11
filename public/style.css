@@ -1,0 +1,223 @@
+* {
+   margin:0;
+   outline:none;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+*::-moz-focus-inner {
+   border: 0;
+}
+
+#root {
+   width: 100vw;
+   height: 100vh;
+}
+
+.left-container {
+   display: flex;
+   flex-direction: column;
+   width:40%;
+   height:100%;
+   padding:1px;
+   background-color:orange;
+   overflow-x:hidden;
+   overflow-y:scroll;
+}
+
+.todolist-unit {
+   display:flex;
+   flex-direction:row;
+   align-items:center;
+   height:50px;
+   width:100%;
+   background-color:rgb(220, 220, 220);
+   margin-top:2px;
+   border:none;
+   flex-shrink: 0;
+
+}
+
+.todolist-unit:hover {
+   background-color:rgb(200,200,200);
+}
+
+#selected-list {
+   background-color:rgb(180,180,180);
+}
+
+.list-title-edit-button {
+   height:24px;
+   width:24px;
+   background-color:transparent;
+   background-image:url(https://i.imgur.com/2PilDlM.png);
+   order:2;
+   border:none;
+   opacity:0.1;
+   margin-right:13px;
+}
+
+.list-title-edit-button:hover {
+   opacity:0.5;
+}
+
+.list-title-edit-button:active {
+   opacity:1;
+}
+
+.list-cancel-button {
+   height:24px;
+   width:24px;
+   background-color:transparent;
+   background-image:url(https://i.imgur.com/cDkN3wh.png);
+   order:3;
+   border:none;
+   opacity:0.1;
+   margin-right:13px;
+}
+
+.list-cancel-button:hover {
+   opacity:0.5;
+}
+
+.list-cancel-button:active{
+   opacity:1;
+}
+
+.list-title {
+   flex-grow:1;
+   order:1;
+   font-size:20px;
+   margin:5px;
+}
+
+.list-title:focus {
+   border:1px gray solid;
+}
+
+.new-todolist {
+   display:flex;
+   align-items:center;
+   width:100%;
+   height:50px;
+}
+
+.new-todolist p {
+   font-size:20px;
+}
+
+.new-list-button {
+   background-color:transparent;
+   border:none;
+   background-image:url(https://i.imgur.com/aRHinNf.png);
+   width:24px;
+   height:24px;
+   margin:10px;
+   opacity:0.3;
+
+}
+
+.new-list-button:hover {
+   opacity:0.5;
+}
+
+.new-list-button:active {
+   opacity:1;
+}
+
+.right-container {
+   display: flex;
+   flex-direction: column;
+   width:60%;
+   height:100%;
+   padding:1px;
+   background-color:orange;
+}
+
+.todoitem-unit {
+   display:flex;
+   flex-direction:row;
+   align-items:center;
+   height:50px;
+   width:100%;
+   background-color:rgb(220, 220, 220);
+   margin-top:2px;
+   border:none;
+   flex-shrink: 0;
+}
+
+.item-finish-checkbox {
+   height:24px;
+   width:24px;
+   order:1;
+   margin-left:13px;
+}
+
+.todoitem-unit p {
+   flex-grow:1;
+   order:2;
+   font-size:20px;
+   margin:5px;
+}
+
+.item-delete-button {
+   height:24px;
+   width:24px;
+   background-color:transparent;
+   background-image:url(https://i.imgur.com/cDkN3wh.png);
+   order:3;
+   border:none;
+   opacity:0.1;
+   margin-right:13px;
+}
+
+.item-delete-button:hover {
+   opacity:0.5;
+}
+
+.item-delete-button:active {
+   opacity:1;
+}
+
+.new-todoitem {
+   display:flex;
+   align-items:center;
+   width:100%;
+   height:50px;
+}
+
+.new-item-button {
+   background-color:transparent;
+   border:none;
+   background-image:url(https://i.imgur.com/aRHinNf.png);
+   width:24px;
+   height:24px;
+   margin:10px;
+   opacity:0.3;
+}
+
+.new-item-button:hover {
+   opacity:0.5;
+}
+
+.new-item-button:active {
+   opacity:1;
+}
+
+.statistics {
+   display:flex;
+   align-items:center;
+   width:100%;
+   height:50px;
+}
+
+.statistics p {
+   margin:13px;
+}
+
+.container {
+   display:flex;
+   width:100%;
+   height:100%;
+   overflow-x: hidden;
+}
+
